@@ -1,0 +1,19 @@
+{
+    "name": "Template",
+    "dockerComposeFile": "compose.yml",
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "customizations":{
+        "vscode": {
+            "extensions": [
+                //ここに拡張機能を追加
+            ],
+            "settings": {
+                "workbench.colorTheme": "Kimbie Dark"
+                //ここに設定を追加
+            }
+        }
+    },
+    "postAttachCommand": "sh ./.devcontainer/init.sh",
+    "remoteUser": "vscode"
+}

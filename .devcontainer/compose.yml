@@ -1,0 +1,14 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    user: vscode
+    ports:
+      - "3000:3000"
+      - "8000:8000"
+    volumes:
+      - ..:/workspace
+    # 以下必要に応じて変更
+    tty: true
+    command: /bin/bash -c "while sleep 1000; do :; done"
