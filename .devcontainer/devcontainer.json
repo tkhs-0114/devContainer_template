@@ -1,9 +1,9 @@
 {
     "name": "Template",
-    "dockerComposeFile": "compose.yml",
+    "dockerComposeFile": "../compose.yml",
     "service": "app",
     "workspaceFolder": "/workspace",
-    "customizations":{
+    "customizations": {
         "vscode": {
             "extensions": [
                 //ここに拡張機能を追加
